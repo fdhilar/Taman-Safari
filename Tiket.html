@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edger" />
+    <meta name="viewport" content="widthdevice-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="tiket.css" />
+    <title>Taman Safari Bogor</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo"><a href="https://bogor.tamansafari.com/">Taman Safari</a></div>
+        <ul class="links">
+          <li><a href="Beranda.html">Beranda</a></li>
+          <li><a href="Tentang.html">Tentang</a></li>
+          <li><a href="Binatang.html">Binatang</a></li>
+          <li><a href="Tiket.html">Tiket</a></li>
+        </ul>
+        <a href="https://www.google.com/maps/place/Taman+Safari+Indonesia+Bogor/@-6.7206492,106.9482606,17z/data=!3m1!4b1!4m6!3m5!1s0x2e69b5cf14e6ee83:0x6586bb20b8f11d9!8m2!3d-6.7206492!4d106.9508355!16s%2Fm%2F0fqqfnm?hl=id&entry=ttu" 
+        class="action_btn">Lokasi</a>
+        <div class="toggle_btn">
+            <img src="menu.png" class="menu-index">
+        </div>
+      </div>
+      <div class="dropdown_menu">
+        <li><a href="Beranda.html">Beranda</a></li>
+          <li><a href="Tentang.html">Tentang</a></li>
+          <li><a href="Binatang.html">Binatang</a></li>
+          <li><a href="Tiket.html">Tiket</a></li>
+          <li><a href="https://www.google.com/maps/place/Taman+Safari+Indonesia+Bogor/@-6.7206492,106.9482606,17z/data=!3m1!4b1!4m6!3m5!1s0x2e69b5cf14e6ee83:0x6586bb20b8f11d9!8m2!3d-6.7206492!4d106.9508355!16s%2Fm%2F0fqqfnm?hl=id&entry=ttu" 
+            class="action_btn">Lokasi</a></li>
+        </div>
+    </header>
+    
+    <script>
+      const toggleBtn =document.querySelector('.toggle_btn')  
+      const toggleBtnIcon =document.querySelector('.toggle_btn i')  
+      const dropDownMenu =document.querySelector('.dropdown_menu')
+
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+
+        toggleBtnIcon.classList= isOpen
+          ?  'fa-solid fa-xmark'
+          :  'fa-solid fa-bars'
+      }
+    </script>
+    <center><img src="https://images.tokopedia.net/img/cache/500-square/product-1/2020/4/8/99427534/99427534_2dbee802-b7b1-489d-a04f-f85fb2c994f9_640_640"></center>
+    
+  </body>
+</html>
